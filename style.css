@@ -1,0 +1,313 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Manufacturing+Consent&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@media (min-width: 768px) {
+  .about-box {
+    max-width: 30%;
+  }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: black; 
+  position: relative;
+  z-index: 1;
+  color: white;
+  
+}
+
+
+.navbar-left ul,
+.navbar-right ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.navbar li {
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar li:hover {
+  color: #FFD700; 
+}
+
+.container {
+  max-width: 1200px;
+  margin:20px 20px ;
+  padding: 15px;
+  justify-content: center;
+  display: flex;
+  gap: 25em;
+}
+ .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+ 
+} 
+.hero-left h1 {
+  color: black;
+  display: flex;
+  font-family: Dancing Script, cursive;
+  font-size: 5rem;
+  padding-right: 20px;
+  max-width: 100%;
+  height: auto;
+  margin: 20px 20px;
+}
+.hero-left p {
+  color: rgb(61, 61, 250);
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 100%;
+  margin: 20px 20px;
+  font-family: Playfair Display;
+}
+
+.hero-right {
+ display: flex;
+    }
+    .hero-image {
+        width: 20em;
+        height: 20em;
+        justify-content: flex-end;
+        object-fit: contain;
+    }
+   
+    .cta-b {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        max-width: 100%;
+      cursor: pointer; 
+      margin: 10px 10px;
+      margin-bottom: 0;
+    }
+    .price-image {
+        width: 28em;
+        height: 26em;
+        object-fit: contain;
+        margin: 20px 20px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+         gap: 4rem;
+         border-radius: 15px;
+        
+    }
+    .about-us {
+  padding: 40px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap; 
+}
+
+.about-box {
+  flex: 1; 
+  min-width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.about-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-family: poppins, sans-serif;
+  color: #333;
+}
+
+.about-box p,
+.about-box ul {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-box ul {
+  padding-left: 20px;
+}
+
+  .contact-us {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+.contact-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.image-box, .contact-form, .location {
+  flex: 1;
+  min-width: 280px;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  color: white;
+}
+
+
+.atm-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+ 
+}
+
+
+.contact-form h2,
+.location h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.submit-button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #444;
+}
+
+
+.location p {
+  margin: 10px 0;
+  color: white;
+}
+
+.location a {
+  color: white;
+  text-decoration: none;
+}
+.location a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+.footer-content {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 1rem;
+  margin-top: 25px;
+} 
+
+.footer-content a {
+  color: #00aced; 
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+  color: #1da1f2; 
+}
+
+.footer-content p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+.image-box {
+  flex: 1;
+  min-width: 280px;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+.atm-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
