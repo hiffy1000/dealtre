@@ -3,398 +3,457 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeduFit - Premium Nigerian Traditional Menswear</title>
+    <title>EcoPower Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="nedufit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="dealtre.css">
     
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <a href="#" class="text-2xl font-bold text-gray-800 heading-font">Nedu<span class="text-amber-700">Fit</span></a>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gray-900 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <img src="ChatGPT Image Jul 13, 2025, 10_42_19 PM.png" alt="Logo" class="h-10 w-10">
+                    <span class="text-xl font-bold text-green-500">DealTree</span>
                 </div>
                 
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                    <a href="#" class="text-gray-300 hover:text-green-500 transition duration-300">
                         <i class="fas fa-bars text-2xl"></i>
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
                     </button>
                 </div>
                 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="nav-link text-gray-800 hover:text-amber-700">Home</a>
-                    <a href="#about" class="nav-link text-gray-800 hover:text-amber-700">About</a>
-                    <a href="#collections" class="nav-link text-gray-800 hover:text-amber-700">Collections</a>
-                    <a href="#testimonials" class="nav-link text-gray-800 hover:text-amber-700">Testimonials</a>
-                    <a href="#contact" class="nav-link text-gray-800 hover:text-amber-700">Contact</a>
+                <div class="hidden md:flex items-center space-x-8">
+<a href="dealtree.html#home" class="text-gray-300 hover:text-green-500 transition duration-300">Home</a>
+<a href="services.html#services" class="text-gray-300 hover:text-green-500 transition duration-300">Services</a>
+<a href="product.html#Product" class="text-gray-300 hover:text-green-500 transition duration-300">Product</a>
+<a href="about.html#about" class="text-gray-300 hover:text-green-500 transition duration-300">About</a>
+<a href="#contact" class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-300">Contact</a>
                 </div>
             </div>
             
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4">
-                <a href="#home" class="block py-2 text-gray-800 hover:text-amber-700">Home</a>
-                <a href="#about" class="block py-2 text-gray-800 hover:text-amber-700">About</a>
-                <a href="#collections" class="block py-2 text-gray-800 hover:text-amber-700">Collections</a>
-                <a href="#testimonials" class="block py-2 text-gray-800 hover:text-amber-700">Testimonials</a>
-                <a href="#contact" class="block py-2 text-gray-800 hover:text-amber-700">Contact</a>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+    <div class="flex flex-col space-y-2 px-2 pt-2">
+    <a href="#" class="block px-3 py-2 text-gray-300 hover:text-green-500 hover:bg-gray-800 rounded-md">Home</a>
+    <a href="services.html#services" class="block px-3 py-2 text-gray-300 hover:text-green-500 hover:bg-gray-800 rounded-md">Services</a>
+    <a href="product.html#products" class="block px-3 py-2 text-gray-300 hover:text-green-500 hover:bg-gray-800 rounded-md">Products</a>
+    <a href="about.html#about" class="block px-3 py-2 text-gray-300 hover:text-green-500 hover:bg-gray-800 rounded-md">About</a>
+    <a href="#contact" class="block px-3 py-2 text-center bg-red-600 text-white rounded-md hover:bg-red-700">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-image h-screen flex items-center justify-center text-center text-white fade-in">
-        <div class="container mx-auto px-6">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 heading-font slide-in-left">Elevate Your Traditional Style</h1>
-            <p class="text-xl md:text-2xl mb-8 slide-in-right">Premium Agbada, Senators & Traditional Wear for the Modern Nigerian Man</p>
-            <a href="#collections" class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
-                Explore Collections
-            </a>
+ <section class="relative bg-cover bg-center min-h-[60vh] flex items-center justify-center" style="background-image: url('https://media.istockphoto.com/id/1049388950/photo/solar-panels-in-dim-light.jpg?s=1024x1024&w=is&k=20&c=TvYlOeSGUXpgT_WCO8LIYNT-uRp4CihXO9WL09p3BHU=')">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">Sustainable Energy Solutions for a Brighter Future</h2>
+            <p class="text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl mx-auto">We provide innovative renewable energy solutions tailored to your needs, helping you reduce costs and environmental impact.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+<a href="services.html" class="px-6 py-3 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-300 font-medium">Our Services</a>
+<a href="#contact" class="px-6 py-3 bg-transparent border-2 border-green-500 text-green-500 rounded-md hover:bg-green-500 hover:text-white transition duration-300 font-medium">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Our Energy Solutions</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Solution 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 animate-fade-in delay-100">
+    <img src="images\IMG-20250713-WA0017 copy 3.jpg" alt="Residential Solar" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-3 text-green-400 uppercase">Solar Solutions</h3>
+                        <p class="text-gray-600 mb-4">Custom solar systems designed for your home to reduce electricity bills and increase property value.</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-300 text-sm">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Solution 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 animate-fade-in delay-200">
+ <img src="images\IMG-20250713-WA0018.jpg" alt="Commercial Solar" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-3 text-green-400 uppercase">Inverter Solutions</h3>
+ <p class="text-gray-600 mb-4">We install top-grade inverters that ensure continuous power supply, helping you manage 
+          outages seamlessly. Whether for home or business use, our systems are designed for durability and efficiency.</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-300 text-sm">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Solution 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 animate-fade-in delay-300">
+<img src="images\IMG-20250713-WA0025.jpg" alt="Industrial Solar" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-3 text-green-400 uppercase">Electrical Solutions</h3>
+ <p class="text-gray-600 mb-4">Our licensed electricians handle everything from wiring to full-scale electrica
+          l system installations. We guarantee safety, compliance, and quality workmanship in every project.</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-300 text-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-gray-900 to-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Make the Switch to Renewable Energy?</h2>
+                <p class="text-xl text-gray-300 mb-8">Join thousands of satisfied customers who are saving money and reducing their carbon footprint with our solutions.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="px-8 py-4 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-300 font-medium text-lg">Get a Free Consultation</a>
+                    <a href="tel:+2348025778193" class="px-8 py-4 bg-transparent border-2 border-green-500 text-green-500 rounded-md hover:bg-green-500 hover:text-white transition duration-300 font-medium text-lg">
+                        <i class="fas fa-phone-alt mr-2"></i> Call Us Now
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 heading-font">About Nedu<span class="text-amber-700">Fit</span></h2>
-            
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <img src="images\5dc5a3165991ea7780c38ebdfc62abfb.jpg" 
-                         alt="NeduFit Founder" 
-                         class="rounded-lg shadow-xl w-full max-w-21px h-auto">
+    <section id="about" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+<img src="ChatGPT Image Jul 13, 2025, 10_42_19 PM.png" alt="Our Team" class="rounded-lg shadow-xl w-full h-auto">
                 </div>
-                <div class="md:w-1/2">
-                    <h3 class="text-2xl font-bold mb-4 heading-font">Crafting Tradition with Modern Elegance</h3>
-                    <p class="text-gray-700 mb-4">
-                        Founded in 2015, NeduFit has become synonymous with premium traditional Nigerian menswear. We blend timeless African craftsmanship with contemporary designs to create pieces that celebrate our heritage while fitting seamlessly into modern lifestyles.
-                    </p>
-                    <p class="text-gray-700 mb-6">
-                        Each NeduFit garment is meticulously crafted using the finest locally-sourced fabrics, with attention to detail that ensures comfort, durability, and undeniable style.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="flex items-center">
-                          <div class="bg-red-700 p-2 rounded-full mr-3">
-                <i class="fas fa-tshirt text-red-700"></i>
-                       </div>
-
-                            <span class="font-medium">Premium Fabrics</span>
+                <div class="lg:w-1/2">
+                    <h2 class="text-2xl md:text-2xl font-bold mb-6 text-white">About DealTree Engineering Solution</h2>
+                    <p class="text-gray-300 mb-4 text-lg">Founded in 2015, DealTree Engineering Solution has been at the forefront of the renewable energy revolution, helping homes and businesses transition to clean, sustainable power sources.</p>
+                    <p class="text-gray-300 mb-6 text-lg">Our team of certified professionals brings decades of combined experience in solar energy, battery storage, and energy efficiency solutions.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <div class="text-green-500 text-3xl font-bold mb-2">1K+</div>
+                            <div class="text-gray-300">Projects Completed</div>
                         </div>
-                        <div class="flex items-center">
-                            <div class="bg-red-700 p-2 rounded-full mr-3">
-                                <i class="fas fa-ruler-combined text-amber-700"></i>
-                            </div>
-                            <span class="font-medium">Perfect Fit</span>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <div class="text-green-500 text-3xl font-bold mb-2">250+</div>
+                            <div class="text-gray-300">5-Star Reviews</div>
                         </div>
-                        <div class="flex items-center">
-                            <div class="bg-red-700 p-2 rounded-full mr-3">
-                                <i class="fas fa-hands-helping text-amber-700"></i>
-                            </div>
-                            <span class="font-medium">Artisan Crafted</span>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <div class="text-green-500 text-3xl font-bold mb-2">10+</div>
+                            <div class="text-gray-300">Years Experience</div>
                         </div>
-                        <div class="flex items-center">
-                            <div class="bg-red-700 p-2 rounded-full mr-3">
-                                <i class="fas fa-truck text-amber-700"></i>
-                            </div>
-                            <span class="font-medium">Nationwide Delivery</span>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <div class="text-green-500 text-3xl font-bold mb-2">24/7</div>
+                            <div class="text-gray-300">Customer Support</div>
                         </div>
                     </div>
+                    <a href="about.html#about" class="inline-block px-6 py-3 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-300 font-medium">Learn More About Us</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Collections Section -->
-    <section id="collections" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 heading-font">Our Collections</h2>
-            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Explore our premium range of traditional menswear, perfect for weddings, ceremonies, and special occasions.</p>
+    <!-- Services -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Our Services</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Agbada Collection -->
-                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="images\1521b8086f5720e74732b4223c4054d8 copy.jpg" 
-                             alt="Agbada Collection" 
-                             class="w-full h-full object-cover transition duration-500 hover:scale-110">
-                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
-                            <button class="bg-amber-700 text-white px-4 py-2 rounded-full">View Collection</button>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 heading-font">Royal Agbada</h3>
-                        <p class="text-gray-600 mb-4">Exquisitely embroidered flowing gowns that command attention and respect.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-700">From  ₦100,000</span>
-                            <button class="text-amber-700 hover:text-amber-800">
-                                <i class="fas fa-shopping-cart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Senator Collection -->
-                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="images\b54a9e1b1bca00c5b3c1354e02a5b60f.jpg" 
-                             alt="Senator Collection" 
-                             class="w-full h-full object-cover transition duration-500 hover:scale-110">
-                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
-                            <button class="bg-amber-700 text-white px-4 py-2 rounded-full">View Collection</button>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 heading-font">Elite Senators</h3>
-                        <p class="text-gray-600 mb-4">Sophisticated two-piece or three-piece suits with traditional Nigerian flair.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-700">From ₦100,000</span>
-                            <button class="text-amber-700 hover:text-amber-800">
-                                <i class="fas fa-shopping-cart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Traditional Collection -->
-                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <div class="relative overflow-hidden h-64">
-                        <img src="images\c089fce48632a8639b80e57c0be27784.jpg" 
-                             alt="Traditional Collection" 
-                             class="w-full h-full object-cover transition duration-500 hover:scale-110">
-                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
-                            <button class="bg-amber-700 text-white px-4 py-2 rounded-full">View Collection</button>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 heading-font">Heritage Classics</h3>
-                        <p class="text-gray-600 mb-4">Timeless traditional outfits including Danshiki, Buba and Sokoto sets.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="font-bold text-amber-700">From ₦200,000</span>
-                            <button class="text-amber-700 hover:text-amber-800">
-                                <i class="fas fa-shopping-cart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <a href="#" class="inline-block border-2 border-amber-700 text-amber-700 font-bold py-3 px-8 rounded-full hover:bg-amber-700 hover:text-white transition duration-300">
-                    View All Collections
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 heading-font">What Our Clients Say</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-gray-100 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                <!-- Services 1 -->
+                <div class="bg-gray-700 rounded-lg p-6 shadow-lg">
                     <div class="flex items-center mb-4">
-                        <div class="text-amber-500 mr-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 mb-6">"My NeduFit agbada was the talk of my brother's wedding. The craftsmanship is exceptional and I received so many compliments. Worth every naira!"</p>
-                    <div class="flex items-center">
-                        <img src="IMG-20250716-WA0103.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        
+                        <img src="images\solar (3).jpg" alt="Solar icon." class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold">Emmanuel Somtoo</h4>
-                            <p class="text-gray-600 text-sm">Lagos</p>
+                            <h3 class="text-xl font-bold text-center mb-3 text-yellow-400">Solar Installations</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
+ <p class="text-gray-300"> Professional installation of residential and commercial solar panel systems with industry-leading warranties.</p>
                 </div>
                 
-                <!-- Testimonial 2 -->
-                <div class="bg-gray-100 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                <!-- Services 2 -->
+                <div class="bg-gray-700 rounded-lg p-6 shadow-lg">
                     <div class="flex items-center mb-4">
-                        <div class="text-amber-500 mr-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 mb-6">"I've bought three senator outfits from NeduFit and each one fits perfectly. Their attention to detail is unmatched in the industry."</p>
-                    <div class="flex items-center">
-                        <img src="images\IMG-20250517-WA0013.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <img src="images\solar products (3).jpg" alt="inverter image." class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold">Chindu Ndukwe</h4>
-                            <p class="text-gray-600 text-sm">Abuja</p>
+                         <h3 class="text-xl font-bold text-center mb-3 text-yellow-400">Inverter Installation</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
+<p class="text-gray-300">We install top-grade inverters that ensure continuous power supply, helping you manage  outages seamlessly</p>
                 </div>
                 
-                <!-- Testimonial 3 -->
-                <div class="bg-gray-100 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                <!-- Services 3 -->
+                <div class="bg-gray-700 rounded-lg p-6 shadow-lg">
                     <div class="flex items-center mb-4">
-                        <div class="text-amber-500 mr-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 mb-6">"The fabric quality is superb and the designs are modern yet traditional. NeduFit has become my go-to for all my traditional wear needs."</p>
-                    <div class="flex items-center">
-                        <img src="images\IMG-20250517-WA0013.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <img src="IMG-20250713-WA0022.jpg" alt="Lisa M." class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold">Adebowale Johnson</h4>
-                            <p class="text-gray-600 text-sm">Ibadan</p>
+                            <h3 class="text-xl font-bold text-center mb-3 text-yellow-400">Elecrical Work</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
                         </div>
                     </div>
+     <p class="text-gray-300">Our licensed electricians handle everything from wiring to full-scale electrica
+          l system installations.</p></p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-amber-700 text-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 heading-font">Get In Touch</h2>
-            
-            <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <h3 class="text-2xl font-bold mb-6 heading-font">Visit Our Showroom</h3>
-                    <div class="mb-6 flex items-start">
-                        <i class="fas fa-map-marker-alt mt-1 mr-4"></i>
-                        <div>
-                            <h4 class="font-bold mb-1">Address</h4>
-                            <p>42 Traditional Way, Victoria Island, Lagos, Nigeria</p>
-                        </div>
-                    </div>
-                    <div class="mb-6 flex items-start">
-                        <i class="fas fa-phone-alt mt-1 mr-4"></i>
-                        <div>
-                            <h4 class="font-bold mb-1">Call Us</h4>
-                            <p>+234 9032342691</p>
-                        </div>
-                    </div>
-                    <div class="mb-6 flex items-start">
-                        <i class="fas fa-envelope mt-1 mr-4"></i>
-                        <div>
-                            <h4 class="font-bold mb-1">Email Us</h4>
-                            <p>chinedundukwe055@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="flex space-x-4 mt-8">
-                        <a href="#" class="bg-white text-amber-700 p-3 rounded-full hover:bg-gray-100 transition duration-300">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="bg-white text-amber-700 p-3 rounded-full hover:bg-gray-100 transition duration-300">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="bg-white text-amber-700 p-3 rounded-full hover:bg-gray-100 transition duration-300">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="bg-white text-amber-700 p-3 rounded-full hover:bg-gray-100 transition duration-300">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
+    <section id="contact" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Contact Us</h2>
                 
-                <div class="md:w-1/2">
-                    <form class="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-bold mb-6 heading-font text-amber-700">Send Us a Message</h3>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 mb-2" for="name">Full Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-                        </div>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 mb-2" for="email">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-                        </div>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 mb-2" for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-                        </div>
-                        <div class="mb-6">
-                            <label class="block text-gray-700 mb-2" for="message">Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-amber-700 text-white py-3 px-4 rounded-lg hover:bg-amber-800 transition duration-300 font-bold">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="py-16 bg-gray-900 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4 heading-font">Join Our Style Community</h2>
-            <p class="mb-8 max-w-2xl mx-auto">Subscribe to our newsletter for exclusive offers, styling tips, and new collection announcements.</p>
-            <div class="max-w-md mx-auto flex">
-                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-900">
-                <button class="bg-amber-700 hover:bg-amber-800 px-6 py-3 rounded-r-lg font-bold transition duration-300">
-                    Subscribe
-                </button>
-            </div>
+<div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+                        <!-- Contact Info -->
+<div class="p-8 bg-gray-700">
+<h3 class="text-2xl font-bold mb-6 text-white">Get In Touch</h3>
+                            
+     <div class="space-y-6"> 
+        <div class="flex items-start">
+<div class="flex-shrink-0 text-green-500 mt-1">
+  <i class="fas fa-map-marker-alt text-xl"></i>
+</div>
+ <div class="ml-4">
+ <h4 class="text-lg font-semibold text-white">Address</h4>
+ <p class="text-gray-300">Akobo Ibadan</p>
+    </div>
+ </div>
+                                
+ <div class="flex items-start">
+<div class="flex-shrink-0 text-green-500 mt-1">
+  <i class="fas fa-phone-alt text-xl"></i>
+      </div>
+    <div class="ml-4">
+ <h4 class="text-lg font-semibold text-white">Phone</h4>
+ <p class="text-gray-300">(+234) 8025778193</p>
+ </div>
+    </div>
+                                
+    <div class="flex items-start">
+    <div class="flex-shrink-0 text-green-500 mt-1">
+ <i class="fas fa-envelope text-xl"></i>
+     </div>
+<div class="ml-4">
+<h4 class="text-lg font-semibold text-white">Email</h4>
+     <p class="text-gray-300">Lateefdealtree123@gmail.com</p> </div>
+ </div>
+                                
+<div class="flex items-start">
+ <div class="flex-shrink-0 text-green-500 mt-1">
+    <i class="fas fa-clock text-xl"></i>
+ </div>
+ <div class="ml-4">
+<h4 class="text-lg font-semibold text-white">Hours</h4>
+<p class="text-gray-300">Monday - Friday: 8AM - 6PM<br>Saturday: 9AM - 2PM</p>
+ </div>
+ </div>
+                                
+<div class="pt-4">
+<h4 class="text-lg font-semibold mb-3 text-white">Follow Us</h4>
+   <div class="flex space-x-4">
+  <a href="#" class="text-gray-300 hover:text-green-500 transition duration-300">
+      <i class="fab fa-facebook-f text-xl"></i>
+  </a>
+         <a href="#" class="text-gray-300 hover:text-green-500 transition duration-300">
+        <i class="fab fa-twitter text-xl"></i>
+      </a>
+     <a href="#" class="text-gray-300 hover:text-green-500 transition duration-300">     <i class="fab fa-instagram text-xl"></i>
+    </a>
+   <a href="#" class="text-gray-300 hover:text-green-500 transition duration-300">
+    <i class="fab fa-linkedin-in text-xl"></i>
+     </a>
+    </div>
+     </div>
+    </div>
+    </div>
+                        
+                        <!-- Contact Form -->
+    <div class="p-8">
+    <form>
+     <div class="grid grid-cols-1 gap-6">
+  <div>
+ <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
+  <input type="text" id="name" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-green-500">
+     </div>
+                                    
+     <div>
+     <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+  <input type="email" id="email" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-green-500">
+    </div>
+                                    
+    <div>
+    <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone</label>
+     <input type="tel" id="phone" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-green-500">
+    </div>
+                                    
+    <div>
+    <label for="service" class="block text-sm font-medium text-gray-300 mb-1">Service Interested In</label>
+     <select id="service" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-green-500">
+    <option>Solar Installation</option>
+    <option>Inverter Installation</option>
+    <option>Dstv Installation</option>
+     <option>Intercom Setup</option>
+      <option>Elecrical Work</option>
+       <option>Cctv Installation</option>
+     <option>Others</option>
+    </select>
+    </div>
+                                    
+     <div>
+    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+    <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+     </div>
+                                    
+     <div>
+     <button type="submit" class="w-full px-6 py-3 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-300 font-medium">Send Message</button>
+     </div>
+     </div>
+        </form>
+     </div>
+    </div>
+     </div>
+     </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer class="bg-gray-950 text-gray-300 pt-16 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Column 1 -->
                 <div>
-                    <h3 class="text-xl font-bold mb-4 heading-font">Nedu<span class="text-amber-700">Fit</span></h3>
-                    <p class="text-gray-400">Elevating traditional Nigerian menswear with premium craftsmanship and contemporary designs since 2015.</p>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="ChatGPT Image Jul 13, 2025, 10_42_19 PM.png" alt="Logo" class="h-10 w-10">
+                        <span class="text-xl font-bold text-green-500">DealTree</span>
+                    </div>
+                    <p class="mb-4">Leading the transition to sustainable energy solutions for homes and businesses.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-green-500 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-green-500 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-green-500 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-green-500 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
+                
+                <!-- Column 2 -->
                 <div>
-                    <h4 class="font-bold mb-4 text-lg">Quick Links</h4>
+                    <h3 class="text-lg font-bold mb-4 text-white">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-400 hover:text-amber-500 transition duration-300">Home</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-amber-500 transition duration-300">About Us</a></li>
-                        <li><a href="#collections" class="text-gray-400 hover:text-amber-500 transition duration-300">Collections</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-amber-500 transition duration-300">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- <div> -->
-                    <h4 class="font-bold mb-4 text-lg">Collections</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Agbada</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Senators</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Traditional Wears</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Accessories</a></li>
-                    </ul>
-                </div>
+ <li><a href="home.html#" class="hover:text-green-500 transition duration-300">Home</a></li>
+ <li><a href="services.html#services" class="hover:text-green-500 transition duration-300">Services</a></li>
+<li><a href="product.html#solutions" class="hover:text-green-500 transition duration-300">Products</a></li>
+<li><a href="about.html#about" class="hover:text-green-500 transition duration-300">About Us</a></li>
+<li><a href="contact.html#contact" class="hover:text-green-500 transition duration-300">Contact</a></li>
+</ul>
+ </div>
+                
+                <!-- Column 3 -->
+<div>
+<h3 class="text-lg font-bold mb-4 text-white">Services</h3>
+<ul class="space-y-2">
+ <li><a href="#" class="hover:text-green-500 transition duration-300">Solar Installation</a></li>
+<li><a href="#" class="hover:text-green-500 transition duration-300">Inverter Installation</a></li>
+<li><a href="#" class="hover:text-green-500 transition duration-300">Dstv Installation</a></li>
+<li><a href="#" class="hover:text-green-500 transition duration-300">Electical Works</a></li>
+<li><a href="#" class="hover:text-green-500 transition duration-300">Intercom Setup</a></li>
+ </ul>
+</div>
+                
+                <!-- Column 4 -->
                 <div>
-                    <h4 class="font-bold mb-4 text-lg">Customer Service</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">FAQs</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Shipping Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Returns & Exchanges</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Size Guide</a></li>
-                    </ul>
+                    <h3 class="text-lg font-bold mb-4 text-white">Newsletter</h3>
+                    <p class="mb-4">Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-1 focus:ring-green-500 w-full">
+                        <button type="submit" class="px-4 py-2 bg-green-600 text-white rounded-r-md hover:bg-green-700 transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 NeduFit. All rights reserved. Crafted with <i class="fas fa-heart text-amber-500"></i> in Lagos, Nigeria.</p>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p>&copy; 2025 DealTree Engineering Solutions. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-green-500 transition duration-300">Privacy Policy</a>
+                        <a href="#" class="hover:text-green-500 transition duration-300">Terms of Service</a>
+                       
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-amber-700 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
 
-  <script src="nedufit.js"></script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // Adjust for fixed navbar height
+                        behavior: 'smooth'
+                    });
+                
+                }
+            });
+        }
+    );
+    </script>
 </body>
 </html>
